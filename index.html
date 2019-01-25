@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/AdminLTE.css">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/ionicons.min.css">
+    <link rel="stylesheet" href="dist/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/css/_all-skins.min.css">
+
+
+</head>
+<body onload="exibir()">
+        <div class="col-md-12">
+                <br>
+    <div class="box box-solid" id="divMae">
+        
+    </div>
+    </div>
+    
+ <br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="">Numero da Nota</label>
+                <input type="number" required class="form-control" id="txtNNota">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="">Titulo da Nota</label>
+                <input type="text" class="form-control" id="txtTitulo">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="">Descrição</label>
+                <textarea name="" cols="30" rows="5" class="form-control" id="txtDesc"></textarea>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="">Tipo de Nota</label>
+                <select name="" id="txtEmer" class="form-control">
+                    <option value="box-warning">Normal</option>
+                    <option value="box-danger">Urgente</option>
+                </select>
+            </div>
+        </div>
+        <input type="hidden" id="txtId">
+        <div class="col-md-12">
+            <button id="btnGuardar" type="button" class="btn btn-success" onclick="salvar()">Guardar</button>
+            <button id="btnModificar" style="display:none" type="button" class="btn btn-warning" onclick="modificar()">Modificar</button>
+            <button id="btnGuardar_" type="button" style="display:none"  class="btn btn-success" onclick="salvar()">Guardar</button>
+        </div>
+
+    </div>
+</div>
+
+
+
+<script src="dist/app.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="dist/js/jquery-1.10.1.min.js"></script>
+<script src="dist/js/site.min.js"></script>   
+<script src="dist/js/adminlte.min.js"></script>
+</body>
+</html>
